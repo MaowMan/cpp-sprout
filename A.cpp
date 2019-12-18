@@ -10,14 +10,14 @@ int main(){
         std::cin>>nxt;
         if (nxt==1){
             putchar('2');
-            putchar('\n')
+            putchar('\n');
         }
         else{
             putchar('1');
-            putchar('\n')
+            putchar('\n');
         }
     }
-    else if (n==3){
-
+    else{
+        std::cout<<"nothing"<<std::endl;
     }
 }
