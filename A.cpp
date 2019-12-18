@@ -1,7 +1,7 @@
 #include <iostream>
 #include <vector>
 #include <cstdio>
-
+#include <set>
 int main(){
     int n;
     std::cin>>n;
@@ -30,6 +30,18 @@ int main(){
             else{
                 std::cout<<b+(b-a)<<std::endl;
             }
+        }
+    }
+    else{
+        int prev,next,cache,first,last;
+        std::cin>>prev>>next;
+        frist=prev;
+        log=next-prev;
+        log.insert(next-prev)
+        while(std::cin>>cache){
+            prev=next;
+            next=cache;
+            if ()
         }
     }
 }
