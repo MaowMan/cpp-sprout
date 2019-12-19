@@ -25,7 +25,7 @@ int main(){
             data.push_back(cache);
     }
     for(int i=0;i<n;i++){
-        long long l,r,result=9999999999;
+        long long l,r,result=99999999999;
         std::cin>>l>>r;
         for(int k=0;k<data.size();k++){
             if(data[k]>=l&&data[k]<=r){
