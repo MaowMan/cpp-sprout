@@ -56,7 +56,7 @@ int main(){
     else{
         long long a,b,c,d;
         std::cin>>a>>b>>c>>d;
-        if((b-a)==(c-b)==(d-c)){
+        if(((b-a)==(c-b))&&((d-c)==(c-b))){
             long long log=(b-a);
             long long prev,next,cache;
             prev=c;
