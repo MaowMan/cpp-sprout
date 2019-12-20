@@ -52,16 +52,22 @@ int main(){
         if(ptr_ra!=b.end()){
             b.erase(ptr_ra);
             a.push_back(ra);
+            a=match(a);
+        }
+        if (a.size()==0||b.size()==0){
+            turn=i+1;
+            res.push_back(a);
+            res.push_back(b);
+            break;
         }
         std::vector<int>::iterator ptr_rb=find(a.begin(),a.end(),rb);
         if(ptr_rb!=a.end()){
             a.erase(ptr_rb);
             b.push_back(rb);
+            b=match(b);
         }
         //print(a);
         //print(b);
-        a=match(a);
-        b=match(b);
         res.push_back(a);
         res.push_back(b);
         if (a.size()==0||b.size()==0){
